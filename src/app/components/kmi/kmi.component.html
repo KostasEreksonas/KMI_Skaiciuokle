@@ -4,11 +4,11 @@
             <div class="card-header">KMI skaičiuoklė</div>
             <div class="card-body">
                 <div class="mb-3">
-                    <label for="ugis" class="form-label">Ūgis (cm)</label>
+                    <label for="ugis" class="form-label">Ūgis (cm) {{ ugis }} cm</label>
                     <input id="ugis" class="form-control" type="text" [(ngModel)]="ugis" placeholder="Įveskite ūgį">
                 </div>
                  <div class="mb-3">
-                    <label for="svoris" class="form-label">Svoris (kg)</label>
+                    <label for="svoris" class="form-label">Svoris (kg) - {{ svoris }} kg</label>
                     <input id="svoris" class="form-control" type="text" [(ngModel)]="svoris" placeholder="Įveskite svorį">
                  </div>
                  <button class="btn btn-success" (click)="KMISkaiciavimas()">Skaičiuoti KMI</button>
