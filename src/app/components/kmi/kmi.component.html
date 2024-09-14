@@ -1,23 +1,29 @@
 <div class="row">
     <div class="col-md-6 mt-5">
         <div class="card">
-            <div class="card-header">KMI skaičiuoklė</div>
+            <div class="card-header text-center">KMI skaičiuoklė</div>
             <div class="card-body">
                 <div class="mb-3">
-                    <label for="ugis" class="form-label">Ūgis (cm) {{ ugis }} cm</label>
+                    <div class="text-center">
+                        <label for="ugis" class="form-label text-center">Ūgis (cm) {{ ugis }} cm</label>
+                    </div> 
                     <input id="ugis" class="form-control" type="text" [(ngModel)]="ugis" placeholder="Įveskite ūgį">
                 </div>
                  <div class="mb-3">
-                    <label for="svoris" class="form-label">Svoris (kg) - {{ svoris }} kg</label>
+                    <div class="text-center">
+                        <label for="svoris" class="form-label">Svoris (kg) - {{ svoris }} kg</label>
+                    </div>                    
                     <input id="svoris" class="form-control" type="text" [(ngModel)]="svoris" placeholder="Įveskite svorį">
                  </div>
-                 <button class="btn btn-success" (click)="KMISkaiciavimas()">Skaičiuoti KMI</button>
+                 <div class="col text-center">
+                    <button class="btn btn-primary" (click)="KMISkaiciavimas()">Skaičiuoti KMI</button>
+                 </div>
             </div>
         </div>
     </div>
     <div class="col-md-6 mt-5">
         <div class="card">
-            <div class="card-header">Kūno masės indeksas</div>
+            <div class="card-header text-center">Kūno masės indeksas</div>
             <div class="card-body">
                 {{ KMI }}
             </div>
